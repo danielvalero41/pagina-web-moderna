@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">    
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;300;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Curso de pagina moderna</title>    
+</head>
+
+
+<body>     
+  <!--Seccion del navegador-->   
+    <nav class="navbar navbar-expand-lg navbar-light bg-grey">
+        <div class="container">
+        
+        <a class="navbar-brand font-weight-bold" href="#">Webook</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link font-weight-bold text-dark" href="#">Contactanos ahora</a>
+            </li>            
+            
+          </ul>          
+        </div>
+    </div>
+    </nav>
+    <!--TITULO PRINCIPAL-->
+    <section class="py-6 hero">
+        <div class="container">
+          <!--Con el mx-auto pudimos centrar el texto en todo el centro de la pantalla-->
+            <div class="text-center w-75 mx-auto">
+            
+                <h1 class="display-4 mb-3">Somos expertos en la 
+                <span class="font-weight-bold">creación de Web Apps</span></h1>
+                <p class="lead text-muted mb-5">Creamos tu Web App con las mejores y mas recientes tecnologias</p>
+                <a href="" class="btn btn-dark mr-2 mb-4">Nuestro portafolio</a>
+                <a href="" class="btn btn-outline-dark mb-4">Contáctanos ahora</a>
+                <!--Con la clase list-inline list-unstyled colocamos nuestra lista desordenada de manera horizontal-->
+                <ul class="list-inline list-unstyled">
+                    <li class="list-inline-item mr-4"><small><i class="icon ion-md-checkmark mr-1"></i> React JS Framework</small></li>
+                    <li class="list-inline-item mr-4"><small><i class="icon ion-md-checkmark mr-1"></i> Django - Python Framework</small></li>
+                    <li class="list-inline-item"><small><i class="icon ion-md-checkmark mr-1"></i> AWS - Amazon Web Services</small></li>
+                </ul>
+            </div>
+            <button data-toggle="modal" data-target="#videomodal" class="position-relative d-flex justify-content-center align-items-center border-0 p-0">
+              <!--Con la clase rounded-circle podemos hacer un circulo en las dimensiones especificada
+                  
+                  Con la clase d-flex podemos aplicar en nuestro div las siguientes propiedades: align-self-center 
+                
+                  Con position-absolute lo que hacemos es colocar el div encima del boton, nuestro div contiene 
+                  un icono y este icono se coloca encima del button que contine una imagen-->
+              <div class="play-icon text-light rounded-circle d-flex position-absolute">
+                <!--align-self-center podemos centrar de manera vertical y con mx-auto de manera horizontal-->
+                <i class="icon ion-md-play align-self-center mx-auto"></i>
+              </div>
+              <!--Con la clase img-fluid hacemos que la imagen sea responsive-->
+              <img src="img/video-cover.jpg" class="img-fluid" alt="">
+            </button>
+        </div>        
+    </section>
+
+<!-- MODAL DONDE ABRIMOS EL ENLACE AL VIDEO-->
+<div class="modal fade" id="videomodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">      
+      <div class="video-container">
+        <iframe width="800" height="450" src="https://www.youtube.com/embed/UvjPP5qu-mQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--SECCION EQUIPO-->
+<section class="py-6 bg-light">
+  <div class="container">
+    <h2 class="mb-0 font-weight-bold">Nuestro equipo</h2>
+    <p class="lead text-muted mb-5">Somos un grupo de expertos en diseño y desarrollo web</p>
+
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="my-3">
+          <!--Recordemos que con la clase position-absolute colocamos
+          todo encima de una imagen-->
+          <div class="position-absolute member-info text-light">
+            <h6 class="font-weight-bold mb-0">Diego Velázquez</h6>
+            <small>Diseñador UI / UX</small>
+          </div>
+          <img src="img/member-01.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="my-3">
+          <!--Recordemos que con la clase position-absolute colocamos
+          todo encima de una imagen-->
+          <div class="position-absolute member-info text-light">
+            <h6 class="font-weight-bold mb-0">Cristian Palacios</h6>
+            <small>Desarrollador Backend</small>
+          </div>
+          <img src="img/member-02.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+      <div class="col-lg-4 d-flex">
+        <div class="align-self-center my-3">
+          <h2 class="font-weight-bold mb-4">Estamos buscando al mejor talento</h2>
+          <p class="text-muted mb-4">Somos un equipo multidisciplinario que está en constante crecimiento.</p>
+          <a href="#" class="btn btn-dark" >Aplica ahora <i class="icon ion-md-arrow-forward align-middle ml-2"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--SECCION PRECIOS-->
+<section class="py-6 bg-grey">
+<div class="container">
+  <h2 class="mb-0 font-weight-bold">Lista de planes</h2>
+  <p class="lead text-muted mb-5">Planes diseñados a tu medida</p>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="card border-0 rounded-0 my-3">
+        <div class="card-header border-0 bg-light p-4">
+          <h5 class="font-weight-bold mb-3">Personal</h5>
+          <h2 class="font-weight-bold display-4">$0</h2>
+          <span class="badge badge-secondary">Mensual</span>
+        </div>
+        <div class="card-body p-4">
+          <p class="font-weight-bold">Ideal para freelancers que acaban de empezar.</p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><small><i class="icon ion-md-checkmark mr-2"></i> Sitio web responsivo</small></li>
+            <li class="mb-2"><small><i class="icon ion-md-checkmark mr-2"></i> Optimizacion SEO</small></li>
+            <li class="mb-2"><small><i class="icon ion-md-checkmark mr-2"></i> Hosting ilimitado</small></li>
+            <li class="mb-2 text-muted"><small><i class="icon ion-md-close mr-2"></i> Tienda en línea</small></li>
+            <li class="mb-2 text-muted"><small><i class="icon ion-md-close mr-2"></i> Certificado de seguridad SSL</small></li>
+          </ul>
+        </div>
+        <div class="card-footer bg-light border-0 text-center p-4">
+          <a href="#" class="btn btn-dark d-block mb-3">Comienza ahora <i class="icon ion-md-arrow-forward align-middle ml-2"></i></a>
+          <small class="text-muted">7 dias de prueba gratis</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card border-0 rounded-0 my-3">
+        <div class="card-header border-0 bg-light p-4">
+          <h5 class="font-weight-bold mb-3">Agency</h5>
+          <h2 class="font-weight-bold display-4">$9</h2>
+          <span class="badge badge-secondary">Mensual</span>
+        </div>
+        <div class="card-body p-4">
+          <p class="font-weight-bold">La mejor opción para equipos pequeños.</p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><small><i class="icon ion-md-checkmark mr-2"></i> Sitio web responsivo</small></li>
+            <li class="mb-2"><small><i class="icon ion-md-checkmark mr-2"></i> Optimizacion SEO</small></li>
+            <li class="mb-2"><small><i class="icon ion-md-checkmark mr-2"></i> Hosting ilimitado</small></li>
+            <li class="mb-2"><small><i class="icon ion-md-checkmark mr-2"></i> Tienda en línea</small></li>
+            <li class="mb-2 text-muted"><small><i class="icon ion-md-close mr-2"></i> Certificado de seguridad SSL</small></li>
+          </ul>
+        </div>
+        <div class="card-footer bg-light border-0 text-center p-4">
+          <a href="#" class="btn btn-dark d-block mb-3">Comienza ahora <i class="icon ion-md-arrow-forward align-middle ml-2"></i></a>
+          <small class="text-muted">7 dias de prueba gratis</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card border-0 rounded-0 my-3">
+        <div class="card-header border-0 bg-light p-4">
+          <h5 class="font-weight-bold mb-3">Enterprise</h5>
+          <h2 class="font-weight-bold display-4">$29</h2>
+          <span class="badge badge-secondary">Mensual</span>
+        </div>
+        <div class="card-body p-4">
+          <p class="font-weight-bold">La solución perfecto para grandes empresas.</p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><small><i class="icon ion-md-checkmark mr-2"></i> Sitio web responsivo</small></li>
+            <li class="mb-2"><small><i class="icon ion-md-checkmark mr-2"></i> Optimizacion SEO</small></li>
+            <li class="mb-2"><small><i class="icon ion-md-checkmark mr-2"></i> Hosting ilimitado</small></li>
+            <li class="mb-2"><small><i class="icon ion-md-checkmark mr-2"></i> Tienda en línea</small></li>
+            <li class="mb-2"><small><i class="icon ion-md-checkmark mr-2"></i> Certificado de seguridad SSL</small></li>
+          </ul>
+        </div>
+        <div class="card-footer bg-light border-0 text-center p-4">
+          <a href="#" class="btn btn-dark d-block mb-3">Comienza ahora <i class="icon ion-md-arrow-forward align-middle ml-2"></i></a>
+          <small class="text-muted">7 dias de prueba gratis</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!--SECCION DE NOTICIAS-->
+<section class="py-6 bg-light">
+<div class="container">
+  <h2 class="mb-0 font-weight-bold">Noticias recientes</h2>
+  <p class="lead text-muted mb-5">Los mejores articulos de la industria</p>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="card border-0 rounded-0 y-3">
+        <div class="card-header border-0 p-4 d-flex bg-grey">
+          <div>
+            <img src="img/user-1.png" class="img-fluid user rounded-circl" alt="">
+          </div>
+          <div class="align-self-center ml-2">
+            <small class="d-block">Publicado por <small class="font-weight-bold">Santiago Reyes</small> </small>
+            <small class="d-block">6 de Abril, 2020</small>
+          </div>
+        </div>
+        <div class="card-body p-4 bg-grey border-0">
+          <small class="d-block mb-3">Emprendimiento - 4 min lectura</small>
+          <h4 class="font-weight-bold">Como reducir los costos de envío para Startups</h4>
+        </div>
+        <div class="card-footer border-0 p-4">
+          <a href="#" class="text-dark"><small>Leer mas <i class="icon ion-md-arrow-forward mr-2"></i></small></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card border-0 rounded-0 y-3">
+        <div class="card-header border-0 p-4 d-flex bg-grey">
+          <div>
+            <img src="img/user-1.png" class="img-fluid user rounded-circl" alt="">
+          </div>
+          <div class="align-self-center ml-2">
+            <small class="d-block">Publicado por <small class="font-weight-bold">Santiago Reyes</small> </small>
+            <small class="d-block">12 de Abril, 2020</small>
+          </div>
+        </div>
+        <div class="card-body p-4 bg-grey border-0">
+          <small class="d-block mb-3">Emprendimiento - 4 min lectura</small>
+          <h4 class="font-weight-bold">Estrategias para generar ingresos a corto plazo</h4>
+        </div>
+        <div class="card-footer border-0 p-4">
+          <a href="#" class="text-dark"><small>Leer mas <i class="icon ion-md-arrow-forward mr-2"></i></small></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card border-0 rounded-0 y-3">
+        <div class="card-header border-0 p-4 d-flex bg-grey">
+          <div>
+            <img src="img/user-1.png" class="img-fluid user rounded-circl" alt="">
+          </div>
+          <div class="align-self-center ml-2">
+            <small class="d-block">Publicado por <small class="font-weight-bold">Santiago Reyes</small> </small>
+            <small class="d-block">18 de Abril, 2020</small>
+          </div>
+        </div>
+        <div class="card-body p-4 bg-grey border-0">
+          <small class="d-block mb-3">Emprendimiento - 4 min lectura</small>
+          <h4 class="font-weight-bold">Como hacer tu primer venta en línea en 15 días</h4>
+        </div>
+        <div class="card-footer border-0 p-4">
+          <a href="#" class="text-dark"><small>Leer mas <i class="icon ion-md-arrow-forward mr-2"></i></small></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!--SECCION CALL TO ACTION-->
+<section class="bg-grey py-6">
+<div class="container">
+  <div class="text-center">
+    <h2 class="font-weight-bold mb-0">Es momento de empezar tu proyecto</h2>
+    <p class="lead text-muted">No pierdas la oportunidad de posicionar a tu marca.</p>
+    <a href='#' class="btn btn-dark mb-4 mr-2">Agenda una demo</a>
+    <a href="#" class="btn btn-outline-dark mb-4">Contáctanos ahora</a>
+  </div>
+</div>
+</section>
+
+<!--SECCION ICONOS-->
+
+<section class="bg-light border-top border-right border-bottom">
+  <!--La clase no-gutters es para que no tenga padding-->
+  <div class="row no-gutters">
+    <div class="col-lg-3 col-md-12 py-4 text-center border-right">
+      <small><a href="#" class="text-dark"> <i class="icon ion-logo-instagram lead mr-2 align-middle"></i>Instagram</a></small>
+    </div>
+    <div class="col-lg-3 col-md-12 py-4 text-center border-right">
+      <small><a href="#" class="text-dark"> <i class="icon ion-logo-facebook lead mr-2 align-middle"></i>Facebook</a></small>
+    </div>
+    <div class="col-lg-3 col-md-12 py-4 text-center border-right">
+      <small><a href="#" class="text-dark"> <i class="icon ion-logo-linkedin lead mr-2 align-middle"></i>linkedIn</a></small>
+    </div>
+    <div class="col-lg-3 col-md-12 py-4 text-center">
+      <small><a href="#" class="text-dark"> <i class="icon ion-logo-youtube lead mr-2 align-middle"></i>YouTube</a></small>
+    </div>
+  </div>
+</section>
+
+<!--SECCION INFORMATIVA-->
+
+<section class="bg-light py-5">
+<div class="container">
+  <div class="w-75">
+    <h2 class="font-weight-bold mb-0">Tienes una idea que <br> 
+    deseas llevar a la realidad.</h2>
+    <p class="text-muted">Queremos escuchar tu proyecto para ayudarte a generar un impacto positivo.</p>
+  </div>
+</div>
+</section>
+
+<!--FOOTER-->
+
+<footer class="bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="mb-5">
+          <h6 class="font-weight-bold mb-0">Ubicación de las oficinas</h6>
+          <small class="text-muted">Paseo de la Reforma 296</small>
+        </div>        
+      </div>
+      <div class="col-lg-4">
+        <div class="mb-5">
+          <h6 class="font-weight-bold mb-0">Teléfonode contacto</h6>
+          <small class="text-muted">+55 2882 2928</small>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="mb-5">
+          <h6 class="font-weight-bold mb-0">Email de contacto</h6>
+          <small class="text-muted">hola@webook.mx</small>
+        </div>
+      </div>
+    </div>
+    <div class="row py-4 border-top">
+      <div class="col-lg-6 col-sm-12 text-sm-centrado">
+        <small><span class="font-weight-bold">©2020 Webook</span>. Creado por webook.mx</small>
+      </div>
+      <div class="col-lg-6 col-sm-12 text-right">
+        <ul class="list-unstyled list-inline mb-0">
+          <li class="list-inline-item mr-4"><a href="#" class="text-dark"><i class="icon ion-logo-instagram lead align-middle"></i> </a></li>
+          <li class="list-inline-item mr-4"><a href="#" class="text-dark"><i class="icon ion-logo-facebook lead align-middle"></i> </a></li>
+          <li class="list-inline-item mr-4"><a href="#" class="text-dark"><i class="icon ion-logo-linkedin lead align-middle"></i> </a></li>
+          <li class="list-inline-item mr-4"><a href="#" class="text-dark"><i class="icon ion-logo-youtube lead align-middle"></i> </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</html>

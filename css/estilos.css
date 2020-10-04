@@ -1,0 +1,153 @@
+body{
+    font-family: 'Spartan', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    background-color:#F6F6F6 ;
+}
+
+.navbar {
+    min-height: 5rem;
+}
+
+.bg-light{
+    background-color: white !important;
+}
+.bg-grey{
+    background-color: #F6F6F6 !important;
+}
+.bg-dark{
+    background-color: black !important;
+}
+
+.text-dark {
+    color: black;
+}
+
+.py-6{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.btn{    
+    padding: .75rem 1rem;
+    border-radius: .1rem;    
+    font-weight: 700;
+}
+
+.btn-dark{    
+    background-color: black;
+}
+
+.btn-outline-dark:hover{
+    background-color: black;
+}
+
+.play-icon{
+    width: 50px;
+    height: 50px;        
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, .5);
+    background: black;
+    /*Establece una animacion de pulso que dure 1.5 segundos y
+    que se repita infinitamente*/
+    animation: pulse 1.5s infinite;
+}
+
+/*Este codigo es para dar la animacion al boton*/
+@keyframes pulse{
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, .8);
+    }
+
+    75% {
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+/*Esta clase hace que se muestre en el section un 70% gris y el
+restante blanco*/
+.hero{
+    background: linear-gradient(180deg, #f6f6f6 70%, white 0);
+}
+
+.modal-dialog{
+    max-width: 800px;
+}
+
+/*Con estas propiedades hacemos que video sea responsive*/
+.video-container{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.video-container::after{
+    padding-top: 56.25%;    
+    display: block;
+    content: '';
+}
+
+.video-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+button:focus{
+    outline: none;
+}
+
+@media(max-width:768px ){
+    .modal-dialog{
+        max-width: 500px;
+    }
+ }
+
+/*Esto es para ubicar la informacion abajo y a la izquierda
+de la foto en la seccion de equipo*/
+ .member-info{
+     bottom: 3rem;
+     left: 3rem;
+ }
+
+
+ .badge {
+     pad: .5rem 1rem;
+ }
+
+ .badge-secondary{
+     background-color: #f6f6f6;
+     color: black;
+ }
+
+ /*Propiedades para la imagen de la seccion de noticias*/
+
+ .user{
+     max-height: 50px;
+ }
+
+ /*MEDIA QUERIES*/
+
+ @media (max-width: 576px){
+     .display-4{
+         font-size: 2.4rem;
+     }
+
+     .btn{
+         width: 100%;
+     }
+     .w-75{
+         width: 100% !important;
+     }
+     .text-right{
+        text-align: center !important;
+     }
+     .text-sm-centrado{
+        text-align: center !important;
+        margin-bottom: 10px;
+     }
+ }
